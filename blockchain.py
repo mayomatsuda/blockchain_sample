@@ -1,8 +1,10 @@
 import hashlib
 import json
+import requests
 
 from time import time
 from urllib.parse import urlparse
+from flask import Flask, jsonify, request
 from uuid import uuid4
 
 class Blockchain(object):
